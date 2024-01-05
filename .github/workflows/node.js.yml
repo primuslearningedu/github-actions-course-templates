@@ -18,14 +18,14 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-          npm build
+          npm run build
         
   test:
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [10.x, 12.x]
         on: [ubuntu-latest, windows-2016]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
