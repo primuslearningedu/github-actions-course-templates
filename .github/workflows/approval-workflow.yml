@@ -3,8 +3,9 @@ on: pull_request_review
 
 jobs:
   labelWhenApproved:
+    name: Label when approved
     run-on: ubuntu-latest
-    step:
+    steps:
       - name: Label approved pull requests
         uses: abinoda/label-when-approved-action@v1.0.7
         with:
